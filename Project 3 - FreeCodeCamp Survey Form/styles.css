@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(images/bg.svg);
+  padding: 4rem 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  font-size: 18px;
+}
+header p {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+.form {
+  background: #a1c7e07a;
+  width: 550px;
+  border-radius: 5px;
+  padding: 2rem 2rem;
+  font-size: 15px;
+  margin: 2rem 0;
+}
+
+.form__name label,
+.form__email label,
+.form__age label,
+.form__role label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: bold;
+}
+
+.form__name input,
+.form__email input,
+.form__age input,
+.form__role input {
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  outline: 0;
+  padding: 0.5rem 0.8rem;
+  transition: box-shadow 0.3s;
+  font-size: 1.5rem;
+}
+
+.form input:focus {
+  box-shadow: 0 0 10px 2px rgb(168, 168, 168);
+}
+.form__role select,
+.form__feature select {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.form__radio .recommend {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.radio__1,
+.radio__2,
+.radio__3 {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.form__radio span label {
+  margin-left: 0.3rem;
+}
+.feature__label {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.form__checkbox,
+.checkbox-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-label {
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+.checkbox input {
+  margin-right: 0.3rem;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+  font-size: 15 px;
+  padding: 0.3rem 0.5rem;
+}
+div .comment {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+textarea:focus {
+  outline: 0;
+  box-shadow: 0 0 10px 2px rgb(231, 231, 231);
+}
+
+button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0;
+  border: 0;
+  border-radius: 3px;
+  background: white;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #0099dd;
+  color: white;
+}
+
+.footer p {
+  font-size: 15px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer a:hover {
+  color: #0099dd;
+}
